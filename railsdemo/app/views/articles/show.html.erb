@@ -1,0 +1,23 @@
+<html>
+
+<table align="center">
+    <tr>
+        <td>
+<Strong> Title: </Strong> </td> 
+<td><b> <%=@article.title %>
+</b> </td>
+</tr>
+<tr>
+<td><Strong> Text: </Strong> </td> 
+<td><b> <%=@article.text %> </b> </td>
+</tr>
+<tr>
+<td> <a href="/articles">Back</a> </td>
+<td> <%= link_to "Edit", edit_article_path(@article)  %>  </td> 
+</tr>
+</table>
+
+
+</html>
+
+<!--link to gets access to  the instance variable @article from the show controller -->
